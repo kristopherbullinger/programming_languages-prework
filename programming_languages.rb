@@ -9,14 +9,7 @@ def reformat_languages(languages)
       new_hash[language][:style] << style
     end
   end
-  new_hash.each do |language, information|
-    if languages[:oo].keys.include? language
-      new_hash[language][:style] << :oo
-    end
-    if languages[:functional].keys.include? language
-      new_hash[language][:style] << :functional
-    end
-  end
+  
   new_hash
   
 end
